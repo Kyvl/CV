@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+      Следующий мета тег "viewport" очень важен для правильного отображения "отзывчивых сайтов" на разных устройствах.
+      Браузеры хотят быть очень услужливыми и пытатться помочь нам, отображая сайты совсем не так, как нужно.
+      Совсем как "Двое из ларца"
+
+      Например - попытаться отобразить всю страницу разом, хотя она должна прокручиваться на 10 экранов,
+      или увеличить шрифт непонятным образом, когда мы переворачиваем телефон горизонтально 
+      1. width=device-with - говорит браузеру "дружище, ширина моей страницы ровно такая, какой ширины твой экран.
+      Не надо ничего подгонять, я сам этим займусь"
+      2. initial-scale=1 - говорит браузеру "не вздумай ничего приближать/отдалять по своему усмотрению, я сам
+      озабочусь тем, чтобы при разной ширине всё отображалось хорошо"
+
+      https://www.w3schools.com/css/css_rwd_viewport.asp
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+       <!--
+    Тайтл отобржается как название закладки в барузере
+    -->
+    <title>KYVL</title>
+    <link rel="icon" href="./cat.ico" type="image/x-icon" sizes="any" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="name">Яков Кондратенко</div>
+
+    <div class="block">
+      <div class="block-title">Связь со мной</div>
+      <div class="block-entries">
+        <div class="entry">
+          <a href="https://t.me/Yakov_kyvl" target="_blank"> telegram</a>
+        </div>
+        <div class="entry">
+          <a href="https://vk.com/id64757720" target="_blank"></a>
+        </div>
+        <div class="entry">
+          <a href="https://www.linkedin.com/in/germandolnikov/" target="_blank">
+            linkedin
+          </a>
+        </div>
+        <div class="entry">
+          <a href="https://github.com/Kyvl" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block-title">Чек лист</div>
+      <div class="entry">
+        <div class="entry">
+          <a href="https://miro.com/welcomeonboard/NlNWWmxxZlpZSUg2V1BiNUpzVDEwMWJrZE9iN1FndUdVRE4xU0VHa1FnL3k1MXQwT1A4bm11aXYzQ3JtWlJXdzZ1Nm5PK3JYT1lEcThxczVuaUF5bW54bS9YMkhpaWROMURVZ2liUzZkb1pETlE4MnUyT2IyZzBuQ2x6ek9KT0UhZQ==?share_link_id=172620623224" target="_blank"> Miro</a>
+        </div>
+      </div>
+    </div>
+    <hr align="left" width="400" size="5" color="#ff9900" />
+    <br />
+
+    <fieldset>
+            <legend>Выбери своих любимых животных</legend>  
+            <label><input type="checkbox">Кошка</label>
+                <label><input type="checkbox">Собака</label>
+                <label><input type="checkbox">Попугай</label>
+                <label><input type="checkbox"checked>Человек</label>
+    </fieldset>
+  </body>
+</html>
